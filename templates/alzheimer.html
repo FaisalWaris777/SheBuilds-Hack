@@ -18,28 +18,19 @@
 
 <div class="login-wrap">
 	<div class="login-html">
-		<input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Breast Cancer Detection</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Brain Tumor Detection</label>
 		<div class="login-form">
 			<div class="sign-up-htm">
-                <form action="http://127.0.0.1:5000/breast_cancer_result" method="post">
+                <form action="http://127.0.0.1:5000/alzheimer_result" method="post" enctype="multipart/form-data">
 				<div class="group">
-					<input name="mean radius" type="text" class="input" placeholder="Enter mean radius">
-				</div>
-				<div class="group">
-					<input name="mean perimeter" type="text" class="input" placeholder="Enter mean perimeter">
+					<input name="name" type="text" class="input" placeholder="Enter Name">
 				</div>
 				<div class="group">
-					<input name="mean area" type="text" class="input" placeholder="Enter mean area">
+					<input name="age" type="text" class="input" placeholder="Enter Age">
 				</div>
 				<div class="group">
-					<input name="mean compactness" type="text" class="input" placeholder="Enter mean compactness">
-				</div>
-                <div class="group">
-					<input name="mean concavity" type="text" class="input" placeholder="Enter mean concavity">
-				</div>
-                <div class="group">
-					<input name="mean concave points" type="text" class="input" placeholder="Enter mean concave points">
-				</div>           
+					<input name="image" type="file" class="input" placeholder="Choose Image">
+				</div>    
 				<div class="group">
 					<input name="submit" type="submit" class="button" value="Detect">
 				</div>

@@ -2,33 +2,29 @@
 <head>
     <title>HHH</title>
     <link rel="stylesheet" href="/static/css/Heart-Disease-Result.css" type="text/css" />
-    <link rel="stylesheet" href="/static/css/navbar.css" type="text/css" />
 </head>
 <body>
 	<header class="header">
-		<h1 class="logo"><a href="http://127.0.0.1:5000/heart_disease">Health</a></h1>
+		<h1 class="logo"><a href="#">Health</a></h1>
       <ul class="main-nav">
-          <li><a href="http://127.0.0.1:5000/heart_disease">Heart-Disease</a></li>
-          <li><a href="http://127.0.0.1:5000/brain_tumor">Brain-Tumor</a></li>
-          <li><a href="http://127.0.0.1:5000/breast_cancer">Breast-Cancer</a></li>
-          <li><a href="http://127.0.0.1:5000">Alzheimer</a></li>
-          <li><a href="http://127.0.0.1:5000">Pneumonia</a></li>
-          <li><a href="http://127.0.0.1:5000">Diabities</a></li>          
+          <li><a href="#">Heart-Disease</a></li>
+          <li><a href="#">Brain-Tumor</a></li>
+          <li><a href="#">Breast-Cancer</a></li>
+          <li><a href="#">Alzheimer</a></li>
+          <li><a href="#">Pneumonia</a></li>
+          <li><a href="#">Diabities</a></li>          
       </ul>
 	</header> 
 
 <div class="login-wrap">
 	<div class="login-html">
-        <div class="box">
-            <div class="box-outer">
-		<h1>Breast Cancer Test Result</h1>
+        <img id="picture" src="data:image/jpeg;base64,{{ img_data }}">
+		<input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Heart Disease Test Result</label>
 		<div class="result">
-                <h2>{{result}}</h2>
-                <h2>Visit <a href="https://ors.gov.in/copp/frm_mobileNo_registration.jsp">this</a> Website to book your appointment</h2>
+                <h2>Breast Cancer Test Result is {{result}}</h2>
+                <h3>Visit this Website to book your appointment</h3>
 		</div>
-    </div>
 	</div>
-</div>
 </div>
 </body>
 </html>
