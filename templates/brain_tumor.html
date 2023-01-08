@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <title>HHH</title>
+    <link rel="stylesheet" href="/static/css/Heart-Disease.css" type="text/css" />
+	<link rel="stylesheet" href="/static/css/navbar.css" type="text/css" />
+</head>
+<body>
+	<header class="header">
+		<h1 class="logo"><a href="http://127.0.0.1:5000/heart_disease">Health</a></h1>
+      <ul class="main-nav">
+          <li><a href="http://127.0.0.1:5000/heart_disease">Heart-Disease</a></li>
+          <li><a href="http://127.0.0.1:5000/brain_tumor">Brain-Tumor</a></li>
+          <li><a href="http://127.0.0.1:5000/breast_cancer">Breast-Cancer</a></li>
+          <li><a href="http://127.0.0.1:5000">Alzheimer</a></li>
+          <li><a href="http://127.0.0.1:5000">Pneumonia</a></li>
+          <li><a href="http://127.0.0.1:5000">Diabities</a></li>          
+      </ul>
+	</header> 
+
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-2" type="radio" name="tab" class="sign-up" checked><label for="tab-2" class="tab">Brain Tumor Detection</label>
+		<div class="login-form">
+			<div class="sign-up-htm">
+                <form action="http://127.0.0.1:5000/brain_tumor_result" method="post" enctype="multipart/form-data">
+				<div class="group">
+					<input name="name" type="text" class="input" placeholder="Enter Name">
+				</div>
+				<div class="group">
+					<input name="age" type="text" class="input" placeholder="Enter Age">
+				</div>
+				<div class="group">
+					<input name="image" type="file" class="input" placeholder="Choose Image">
+				</div>    
+				<div class="group">
+					<input name="submit" type="submit" class="button" value="Detect">
+				</div>
+            </form>                
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+/* FORM_CSS */
+
+body{
+	margin:0;
+	color:#6a6f8c;
+	background:#f7f3f3;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	/* margin-top:8px; */
+	max-width:100%;
+	min-height:564px;
+	position:relative;
+	background:url(https://www.aruplab.com/files/images/blog/2017-Results.jpg) no-repeat;
+  background-size: cover;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:30px 70px 50px 70px;
+	background:#cecccc;
+}
+
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.result h2{
+  color: rgb(0, 0, 0);
+  /* color: rgb(255, 250, 250); */
+	opacity: 0.9;  
+	padding-top:10px;
+	padding-left:30px;
+}
+.box-outer h1{
+	color: rgb(255, 250, 250);
+	  /* opacity: 0.8;   */
+	  padding-top:25px;
+	  padding-left:30px;
+  }
+.box{
+		margin-top: 30px;
+		margin-left: 300px;
+
+		/* padding-top: 30px; */
+		width:600px;
+		height:450px;
+		background:url(https://media.istockphoto.com/id/1348856465/photo/heart-and-ecg-graph.jpg?b=1&s=170667a&w=0&k=20&c=KSISjEaKJAVSZE14NTzfoWOQ69_Gwd-M-lVv695in8A=) no-repeat;
+		box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+		background-size: cover;
+		border-radius: 8px;
+		/* background-color: rgb(233, 18, 18); */
+}
+.box-outer{
+	width:100%;
+	height:100%;
+	/* position:absolute; */
+	/* padding:30px 70px 50px 70px; */
+	background:rgba(57, 82, 133, 0.8);
+}  
+.result{
+	margin-top: 100px;
+	/* max-width:400px; */
+}
